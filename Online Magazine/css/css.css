@@ -1,0 +1,289 @@
+/**
+ * file: css/css.css
+ * purpose: styling
+ **/
+
+/* Define variables in the :root */
+ :root {
+   --contrast: rgb(0, 0, 0);
+   --backgr: #ffffff;
+   --greenMarker: #add05a;
+   --orangeMarker: #ffd965;
+   --pinkMarker: #ffc2c2;
+   --bluepastelBox: #edf5fd; 
+   --padding: 0;
+   --margin: 0;
+   --whiteSp: 125px;
+ }
+
+/* Use your variables on elements */
+main {
+   color: var(--contrast);
+   background-color: var(--backgr);
+ }
+
+ *{
+  margin:0;
+  padding: 0;
+  -webkit-font-smoothing:antialiased;
+ }
+
+ .header {
+  background-color:transparent;
+  padding: 20px;
+  width:100%;
+  height:80px;
+  display: flex;
+  align-items:center;
+  padding:0 2%;
+  box-sizing:border-box;
+  justify-content: space-between;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:1000;
+}
+
+ #forsidebillede{
+  background-size: cover;
+  background-position: relative;
+  height: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+#logo{
+  width:120px;
+  height:48px;
+  position:absolute;
+  left:46%;
+  top: 0;
+  content:"";
+  margin-top: 0.8%;
+  text-align:center;
+}
+
+/*--Om Section--*/
+.Om{
+  width:50%;
+  margin:auto;
+  text-align:center;
+  padding-top:100px;
+}
+
+h1{
+  font-size:36px;
+  font-weight:900;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  
+}
+
+#marker{
+  text-decoration: underline;
+  text-decoration-color: #ffd965;
+  text-underline-position:auto;
+  text-decoration-thickness: 10px;
+}
+
+p{
+  color:var(--contrast);
+  font-size: 17px;
+  font-weight:300;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  line-height:26px;
+  padding:25px;
+  margin-top: 20px;
+}
+
+#box-behindForside {
+  flex-basis:31%;
+  background:#eff1f4;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  color: #000;
+  display: block;
+  transition: 0.3s;
+  font-family: "Roboto", sans-serif;
+  
+}
+
+.hoved-title-menu{
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.sidenav a:hover {
+  color: floralwhite;
+  background-color:#add05a;
+}
+
+li a{
+  font-size: 20px;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.sub-menu a:hover {
+  background-color: #ffc2c2;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+/*Første tilfældig artikel*/
+.først-tilfældig-artikel{
+  display: flex;
+  padding: 20px 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 36px;
+}
+
+.titel-box-pink {
+  background-color: #ffc2c2;
+  flex-basis:31%;
+  margin: 25px 0;
+  padding:20px 0px;
+
+}
+
+.artikeltitel-pink{
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  font-weight: 900;
+  padding:25px;
+  margin-top: 10px;
+}
+
+.no-underline{
+  text-decoration: none;
+  color:#000000;
+}
+
+.no-underline:hover{
+  color: #ffffff;
+}
+
+.artikeltitel-pink1{
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding:25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.artikeltitel-pink2{
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  padding:25px;
+  margin-top: 5px;
+}
+
+.image1tilfældig-artikel{
+  width: auto;
+  height: 100%;
+  /*width:497px 
+  height:215px*/
+}
+
+.image-artikel2{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 36px;
+}
+
+.image-artikel2 img{
+  width: 40%;
+  height: 40%;
+}
+
+.artikeltitle-green{
+  background-color: #add05a;
+  text-align: center;
+  margin-bottom: 36px;
+  margin-left: 29.95%;
+  margin-right: 29.95%;
+}
+
+
+/*footer*/
+
+.footer {
+	background-color:#000000;
+	color: #ffffff;
+	padding: 40px 0;
+  margin-top: 50px;
+}
+
+.SoMe-container {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+  justify-content:right;
+  align-content: center;
+  margin-bottom: 10px;
+}
+	
+.SoMe {
+	display: flex;
+	align-items: center;
+}
+
+.SoMe a {
+	margin-right: 25px;
+}
+
+.SoMe a img {
+	width: 30px;
+}
+
+.footer-section {
+	Color: #000000;
+	Font-family: "Roboto", sans-serif;
+	margin-right: 0px;
+}
+
+.footer-section p {
+	font-size:14px;
+	line-height:1.6;
+	color: #ffffff;
+}
+
+.logohvidt img{
+  width: 250px;
+}

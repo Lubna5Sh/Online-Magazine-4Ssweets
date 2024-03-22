@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>4Ssweets</title>
+  <link rel="stylesheet" href="css/css.css">
+  <link href="https://fonts.googleapis.com/css2?family=Honk&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!--kunne ikke får logoen til at sidde indenfor headeren grænser, og kunne ikke gøre headeren bredere-->
+  <header>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a class="hoved-title-menu" href="#">Opskrifter</a>
+          <ul class="sub-menu">
+              <li><a class="sub-item" href="artikel1.html">Hurtige & nemme</a></li>
+              <li><a class="sub-item" href="#">Sunde alternativer</a></li>
+              <li><a class="sub-item" href="#">Budgetvenlige</a></li>
+          </ul>
+      <a class="hoved-title-menu" href="#">Tips</a>
+          <ul class="sub-menu">
+              <li><a class="sub-item" href="#">Sundhed tips & råd</a></li>
+              <li><a class="sub-item" href="#">Tips til studerende</a></li>
+              <li><a class="sub-item" href="artikel2.html">Ingrediens guider</a></li>
+          </ul>
+      <a class="hoved-title-menu" href="#">Inspirationer</a>
+      <a class="hoved-title-menu" href="medlemskab.html">Medlemskab</a>
+      <a class="hoved-title-menu" href="#">Nyhedsbrev</a>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+    <a href="index.html"><img id="logo" src="images/b48xqamo.png" alt="4ssweets logo"></a>
+
+
+    <div>
+      <img id="forsidebillede" src="images/Forsidebillede.png" alt="laptop,book,healthy dessert bowl">
+    </div>
+  </header>
+
+  <main>
+    <section class="Om">
+      <h1 id="marker">Om Magasinet</h1>
+
+      <p id="box-behindForside">Er du studerende og er på SU? Har du en sød tand og kan ikke forstille dit liv uden søde sager, men på samme tid føler du dig skyldig efter at have spist for meget sukker? Og inderst inde er der noget der hvisker til dig at du skal begynde og ændre dine spisvaner og bør følge en sund kostplan? Men du bliver stødt med den virkelighed om hvor dyrt er sunde færdiglavede 
+        desserter i forhold til din SU?
+        Så er du landet på det rigtigt sted. 
+        4S.sweets magasin tilbyder dig en mangfoldig samling af sunde og 
+        velsmagende dessertopskrifter der tilfredstiller dine søde tænder, din krop og din lomme, og hjælper dig med at skære ned af sukkerindtagelse og så får du sundere livsstil. 
+        Velkommen til 4S.sweets!</p>
+    </section>
+
+    <section class="først-tilfældig-artikel">
+      <div class="titel-box-pink"><a href="#" class="no-underline">  
+        <h1 class="artikeltitel-pink">DIY-versioner af populær butiksvarer</h1>
+        <p class="artikeltitel-pink1"> Gem dine penge og lav maltesers hjemme</p>
+        <p class="artikeltitel-pink2"> Af Lubna Al-Shihabi</p></a>
+      </div>
+      <div class="image1tilfældig-artikel">
+        <img src="images/MV_Slider50Snacks_1-800x400.png" alt="færdiglavede-produkter">
+      </div>
+    </section>
+
+    <section>
+      <div class="image-artikel2">
+        <img src="images/_d75717b1-cd01-461a-8268-b0ca080f07b9.jpg" alt="apple, laptop, desserts">
+      </div>
+      <a href="#" class="no-underline"><h1 class="artikeltitle-green">At spise sundt på SU</h1></a>
+    </section>
+
+    <footer class ="footer">
+      <div class="container">
+        <div class="SoMe-container">
+          <div class="SoMe">
+            <a href="#"><img src="images/facebook-app-symbol.png" alt="facebook"></a>
+            <a href="#"><img src="images/youtube(1).png" alt="youtube icon"></a>
+            <a href="#"><img src="images/Circular-Pinterest-icon-black.png" alt="pintrest icon"></a>
+            <a href="#"><img src="images/instagram.png" alt="instagram icon"></a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <p id="copyright">&copy; 4Ssweets 2024 - All rights resereved</p>
+        </div>
+        
+        <div class="logohvidt">
+             <img src="images/logohvidt.png" alt="white logo">
+        </div>
+      </div>
+    </footer> 
+  </main>
+  <script>
+    function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+  </script>
+</body>
+</html>

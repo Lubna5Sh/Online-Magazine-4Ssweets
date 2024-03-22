@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>4Ssweets</title>
+  <link rel="stylesheet" href="css/artikel1.css">
+  <link href="https://fonts.googleapis.com/css2?family=Honk&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--kunne ikke får logoen til at sidde indenfor headeren grænser, og kunne ikke gøre headeren bredere-->
+    <header>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a class="hoved-title-menu" href="#">Opskrifter</a>
+                <ul class="sub-menu">
+                    <li><a class="sub-item" href="artikel1.html">Hurtige & nemme</a></li>
+                    <li><a class="sub-item" href="#">Sunde alternativer</a></li>
+                    <li><a class="sub-item" href="#">Budgetvenlige</a></li>
+                </ul>
+            <a class="hoved-title-menu" href="#">Tips</a>
+                <ul class="sub-menu">
+                    <li><a class="sub-item" href="#">Sundhed tips & råd</a></li>
+                    <li><a class="sub-item" href="#">Tips til studerende</a></li>
+                    <li><a class="sub-item" href="artikel2.html">Ingrediens guider</a></li>
+                </ul>
+            <a class="hoved-title-menu" href="#">Inspirationer</a>
+            <a class="hoved-title-menu" href="medlemskab.html">Medlemskab</a>
+            <a class="hoved-title-menu" href="#">Nyhedsbrev</a>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+        <a href="index.html"><img id="logo" src="images/b48xqamo.png" alt="4ssweets logo"></a>
+
+        <section class="title-billede">
+            <img class="artikel1coverbillede" src="images/1artikelcover.PNG" alt="coverbillede af frossen yoghurt">
+            <div class="text-block"><h1>Frozen <br>Yogurt</h1></div>
+        </section>  
+        <img class="info" src="images/Skærmbillede2024-03-22-103544.png" alt="info om tid, pris, kalorie, antal person/stk.">
+    </header>
+
+
+    <div class="body">
+        <article class="content">
+            <p class="post-info">
+                By Lubna Al-Shihabi     Mars 16, 2024
+                <h3>Sidder du hjemme og keder dig i sommeren og orker ikke at gå udenfor 
+                under solen?</h3>
+                
+                <br>Gå hen til køleskabet, tager noget yogurt, oghent bagefter hvilket som helst frugt, 
+                frosne ller frisk. Så er du klare nu til at forberede en kolde bombe af frossen yogurt, 
+                der vil tilfredstille dine søde tænder.
+            </p> 
+        </article>
+        <article class="content" id="PS">
+            <p>
+                <h3>PS:</h3>
+                <br>- Helst bruge græsk yoghurt der den lidt tykkere, 
+                    men du kan lige så godt bruge den yoghurt du har i køleskab.
+                
+                <br>- Hvis du ikke har honning, du kan bruge rør sukker, 
+                    hvis begge ikke tilgængelig hos dig, kan du bruge lidt hvide sukker, 
+                    da frugt har naturlig sødesmag.  
+                
+                <br>- Du behøver ikke og forholde dig præcist til de ingredienser jeg har 
+                    skrivet her. Men bruge dem som inspiration til din opskrift.
+            </p>
+        </article>
+        
+        <aside class="sidebar-ingr">
+            <p>
+                <h3>Ingredienser</h3>
+                <br>½ kop yogurt
+                <br>½ kop jordbær
+                <br>2-3 spsk. honning
+                <br>½ tsk. vanilje
+            </p>
+        </aside>
+
+        <article class="content" id="Fremgangsmåde">
+            <p>
+                <h3>Fremgangsmåde:</h3>
+
+                <br>1. Hent blenderen.
+
+                <br>2. Tilsæt alle ingredienser i blender.
+
+                <br>3. Blend indtil du ser alle ingredienser er blandet godt sammen.
+
+                <br>4. Sæt blanding i kopper eller en kasse.
+
+                <br>5. Sæt blandingen i fryseren over 4-7 timer.
+
+                <br>6. Efter de bliver frosset tager den ud af fryseren og nyde isen! 
+
+                <p><br>Så nemt er det! Kold, nem, billig, sund og endda sød is for 
+                en varm sommer eller andre sæsoner (hvis du har stærk 
+                hals og mandler der tåler is i kold vejre:) </p>
+            </p>
+        </article>
+
+        <aside class="image-slider">
+            <div class="slider-wrapper">
+                <div class="slider">
+                  <img id="slide-1" src="images/ingr.PNG" alt="ingredienser">
+                  <img id="slide-2" src="images/ingr-i-blender.jpg" alt="ingredienser i blenderen">
+                  <img id="slide-3" src="images/blandede-ingr.jpg" alt="blandede ingredienser">
+                  <img id="slide-4" src="images/i-kasse.jpg" alt="ingredienser i kassen">
+                  <img id="slide-5" src="images/done-froz.jpg" alt="det endelige resultat">
+                </div>
+                <div class="slider-nav">
+                  <a href="#silde-1"></a>
+                  <a href="#slide-2"></a>
+                  <a href="#slide-3"></a>
+                  <a href="#slide-4"></a>
+                  <a href="#slide-5"></a>
+                </div>
+              </div>
+        </aside>
+    </div>
+
+    <footer class ="footer">
+    </footer> <!--kunne ikke får footeren til sidde sidste i siden, den har ødelagt layoutet af siden, så jeg har fjernet den-->
+
+
+    <script>
+        function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+      </script>
+
+</body>
+</html>
